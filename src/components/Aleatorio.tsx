@@ -3,10 +3,14 @@ import { View, Text } from "react-native";
 
 import Estilo from "./estilo";
 
-export default (props: { first: number; last: number }) => (
-    <View>
-        <Text style={Estilo.txtG}>
-            O número aleatório entre {props.first} e {props.last} é: {Math.floor(Math.random() * (props.last - props.first + 1)) + props.first}
-        </Text>
-    </View>
-)
+export default (props: { min: number; max: number }) => {
+    const delta = props.max - props.min + 1
+    const aleatorio = Math.floor(Math.random() * delta) + props.min
+    return (
+        <View>
+            <Text style={Estilo.txtG}>
+                O número aleatório entre {props.min} e {props.max} é: {aleatorio}
+            </Text>
+        </View>
+    )
+}
