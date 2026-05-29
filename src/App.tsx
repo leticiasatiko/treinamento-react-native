@@ -11,13 +11,14 @@ import Botao from './components/Botao'
 import Pai from './components/direta/Pai'
 import PaiIndireto from './components/indireta/Pai'
 import ContadorV2 from './components/contador/ContadorV2'
+import ParImpar from './components/ParImpar'
 
 export default () => (
     <View style={style.App}>
 
-        <ContadorV2 />
-        
+        <ParImpar num={5} />
         {/* 
+        <ContadorV2 />
         <PaiIndireto />
         <Pai />
         <Contador inicial={100} passo={10} />
