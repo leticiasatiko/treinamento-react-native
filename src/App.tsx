@@ -16,13 +16,15 @@ import Familia from './components/relacao/Familia'
 import Membro from './components/relacao/Membro'
 import UsuarioLogado from './components/UsuarioLogado'
 import ListaProdutos from './components/produtos/listaProdutos'
+import ListaProdutosV2 from './components/produtos/ListaProdutosV2'
 
 export default () => (
     <View style={style.App}>
         
-        <ListaProdutos />        
+        <ListaProdutosV2 />
 
         {/* 
+        <ListaProdutos />        
         <UsuarioLogado usuario={{ nome: 'Letícia', email: 'leticia@example.com' }} />
         <UsuarioLogado usuario={{ nome: 'Márcia', email: '' }} />
         <Familia>
