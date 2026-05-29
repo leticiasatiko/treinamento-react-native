@@ -12,12 +12,22 @@ import Pai from './components/direta/Pai'
 import PaiIndireto from './components/indireta/Pai'
 import ContadorV2 from './components/contador/ContadorV2'
 import ParImpar from './components/ParImpar'
+import Familia from './components/relacao/Familia'
+import Membro from './components/relacao/Membro'
 
 export default () => (
     <View style={style.App}>
-
-        <ParImpar num={5} />
+        <Familia>
+            <Membro nome="João" sobrenome="Silva" />
+            <Membro nome="Ana" sobrenome="Silva" />
+            <Membro nome="Pedro" sobrenome="Silva" />
+        </Familia>
+        <Familia>
+            <Membro nome="Maria" sobrenome="Souza" />
+            <Membro nome="Marcos" sobrenome="Souza" />
+        </Familia>
         {/* 
+        <ParImpar num={5} />
         <ContadorV2 />
         <PaiIndireto />
         <Pai />
