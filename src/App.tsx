@@ -14,9 +14,17 @@ import ContadorV2 from './components/contador/ContadorV2'
 import ParImpar from './components/ParImpar'
 import Familia from './components/relacao/Familia'
 import Membro from './components/relacao/Membro'
+import UsuarioLogado from './components/UsuarioLogado'
+import ListaProdutos from './components/produtos/listaProdutos'
 
 export default () => (
     <View style={style.App}>
+        
+        <ListaProdutos />        
+
+        {/* 
+        <UsuarioLogado usuario={{ nome: 'Letícia', email: 'leticia@example.com' }} />
+        <UsuarioLogado usuario={{ nome: 'Márcia', email: '' }} />
         <Familia>
             <Membro nome="João" sobrenome="Silva" />
             <Membro nome="Ana" sobrenome="Silva" />
@@ -26,7 +34,6 @@ export default () => (
             <Membro nome="Maria" sobrenome="Souza" />
             <Membro nome="Marcos" sobrenome="Souza" />
         </Familia>
-        {/* 
         <ParImpar num={5} />
         <ContadorV2 />
         <PaiIndireto />
