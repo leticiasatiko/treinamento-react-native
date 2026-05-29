@@ -8,11 +8,15 @@ import CompUm, { Comp2, Comp3 } from './components/Multi'
 import Primeiro from './components/Primeiro'
 import Titulo from './components/Titulo'
 import Botao from './components/Botao'
+import Pai from './components/direta/Pai'
 
 export default () => (
     <View style={style.App}>
-        <Contador inicial={100} passo={10} />
 
+        <Pai />
+
+
+        {/* <Contador inicial={100} passo={10} /> */}
         {/* <Botao /> */}
         {/* <Titulo principal="Cadastro Produto" secundario="Tela de Cadastro" /> */}
         {/* <Aleatorio min={1} max={5} />
