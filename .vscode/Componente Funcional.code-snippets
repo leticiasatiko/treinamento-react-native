@@ -9,7 +9,7 @@
 			"",
 			"export default (props: {}) => {",
 			"    return (",
-			"        <Text>$1</Text>",
+			"        <Text style={Estilo.txtG}>$1</Text>",
 			"    )",
 			"}"
 		],
