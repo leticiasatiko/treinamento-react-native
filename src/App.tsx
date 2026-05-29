@@ -9,23 +9,26 @@ import Primeiro from './components/Primeiro'
 import Titulo from './components/Titulo'
 import Botao from './components/Botao'
 import Pai from './components/direta/Pai'
+import PaiIndireto from './components/indireta/Pai'
 
 export default () => (
     <View style={style.App}>
 
+        <PaiIndireto />
+
+        {/* 
         <Pai />
-
-
-        {/* <Contador inicial={100} passo={10} /> */}
-        {/* <Botao /> */}
-        {/* <Titulo principal="Cadastro Produto" secundario="Tela de Cadastro" /> */}
-        {/* <Aleatorio min={1} max={5} />
+        <Contador inicial={100} passo={10} />
+        <Botao />
+        <Titulo principal="Cadastro Produto" secundario="Tela de Cadastro" />
+        <Aleatorio min={1} max={5} />
         <MinMax min="3" max="10"/>
         <MinMax min="1" max="94"/>
         <CompUm />
         <Comp2 />
         <Comp3 />
-        <Primeiro /> */}
+        <Primeiro />
+        */}
     </View>
 )
 
