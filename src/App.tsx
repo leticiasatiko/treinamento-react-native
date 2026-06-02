@@ -18,13 +18,20 @@ import UsuarioLogado from './components/UsuarioLogado'
 import ListaProdutos from './components/produtos/listaProdutos'
 import ListaProdutosV2 from './components/produtos/ListaProdutosV2'
 import DigiteSeuNome from './components/DigiteSeuNome'
+import Quadrado from './components/layout/Quadrado'
+import FlexboxV1 from './components/layout/FlexboxV1'
+import FlexboxV2 from './components/layout/FlexboxV2'
+import FlexboxV3 from './components/layout/FlexboxV3'
+import FlexboxV4 from './components/layout/FlexboxV4'
 
 export default () => (
     <View style={style.App}>
-        <DigiteSeuNome />
-
-
+        <FlexboxV4 />
         {/* 
+        <FlexboxV3 />
+        <FlexboxV2 />
+        <FlexboxV1 />
+        <DigiteSeuNome />
         <ListaProdutosV2 />
         <ListaProdutos />        
         <UsuarioLogado usuario={{ nome: 'Letícia', email: 'leticia@example.com' }} />
